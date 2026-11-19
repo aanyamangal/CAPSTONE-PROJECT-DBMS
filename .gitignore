@@ -1,5 +1,12 @@
 node_modules/
-server/node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.vscode/
+.vercel/
 .env
 server/.env
-git add .
+node_modules/
+server/node_modules/
