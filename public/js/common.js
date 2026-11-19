@@ -18,7 +18,7 @@ function shell(role,navs,render){const u=me();if(!u||u.role!==role){location.hre
  const go=n=>{document.querySelectorAll('.nav').forEach(a=>a.classList.toggle('on',a.dataset.n==n));$('#ttl').textContent=navs.find(x=>x[0]==n)[1];$('#sb').classList.remove('open');render[n]($('#view'));location.hash=n};
  document.querySelectorAll('[data-n]').forEach(a=>a.onclick=()=>go(a.dataset.n));$('#mb').onclick=()=>$('#sb').classList.toggle('open');
  $('#lo').onclick=()=>confirmBox('Log out now?',()=>{log('LOGOUT',u.email);sessionStorage.clear();location.href='index.html'});
- $('#rs').onclick=e=>{e.preventDefault();confirmBox('Reset all demo data?',resetDemo)};go(navs.some(n=>n[0]==location.hash.slice(1))?location.hash.slice(1):navs[0][0]);return go}
+go(navs.some(n=>n[0]==location.hash.slice(1))?location.hash.slice(1):navs[0][0]);return go}
 // Generic CRUD page. cfg:{title,list(),fields:[{k,l,t,opts,req}],cols,save(obj,id),del(id),search,filter}
 function crudPage(el,cfg){const draw=table(el,{rows:cfg.list,cols:cfg.cols,search:cfg.search,filter:cfg.filter,extra:'<button class="btn" id="add">+ Add</button>',
  actions:r=>`<button class="btn sec sm" data-e="${r.id}">Edit</button> <button class="btn bad sm" data-d="${r.id}">Delete</button>`,
