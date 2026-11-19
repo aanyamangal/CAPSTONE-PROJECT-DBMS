@@ -1,4 +1,4 @@
-// OEMS backend. Frontend (public/) works standalone in demo mode; these routes are the MySQL integration layer.
+// OEMS backend. Frontend (public/) works standalone in ; these routes are the MySQL integration layer.
 require('dotenv').config();
 const express=require('express'),cors=require('cors'),jwt=require('jsonwebtoken'),crypto=require('crypto'),path=require('path'),mysql=require('mysql2/promise');
 const app=express();app.use(cors(),express.json());

@@ -21,7 +21,7 @@ oems/
 | Admin   | admin@exam.demo     | Admin@123   |
 (student1…student24@exam.demo share the password; student11 and student22 are inactive.)
 
-## Quick start (demo mode, no database needed)
+
 1. Install VS Code and Node.js LTS (https://nodejs.org). Check: `node -v`.
 2. VS Code → File → Open Folder → `oems`. Open terminal (Ctrl+`).
 3. `cd server` → `npm install` → `npm start` → open http://localhost:3000
