@@ -3,7 +3,6 @@
 <div class="tabs"><button class="btn" id="ts">Student</button><button class="btn sec" id="ta">Admin</button></div>
 <label>Email</label><input id="em" type="email" value="aanya@exam.demo"><label>Password</label><input id="pw" type="password" value="Student@123"><div class="err" id="er"></div>
 <button class="btn" style="width:100%" id="go">Sign in</button>
-<p class="mut" style="font-size:12px">Demo: aanya@exam.demo / Student@123 · kapoor@exam.demo / Admin@123</p></div></div>
 <script src="js/demo-data.js"></script><script src="js/common.js"></script><script>
 let role='student';const set=r=>{role=r;$('#ts').className='btn'+(r=='student'?'':' sec');
 $('#ta').className='btn'+(r=='admin'?'':' sec');
